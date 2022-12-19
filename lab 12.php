@@ -40,10 +40,9 @@ class Dog extends Animal
 {
 	public $breed;
 	
-	function __construct($food,$location,$breed)
+	function __construct($breed)
 	{
-		$this->food=$food;
-		$this->location=$location;
+		
 		$this->breed=$breed;
 	}
 	public function makeNoise()
@@ -62,10 +61,9 @@ class Dog extends Animal
 class Cat extends Animal
 {
 	public $speed;
-	function __construct($food,$location,$speed)
+	function __construct$speed)
 	{
-		$this->food=$food;
-		$this->location=$location;
+		
 		$this->speed=$speed;
 	}
 	public function makeNoise()
@@ -89,10 +87,9 @@ class Cat extends Animal
 class Horse extends Animal
 {
 	public $hohma;
-	function __construct($food,$location,$hohma)
+	function __construct(,$hohma)
 	{
-		$this->food=$food;
-		$this->location=$location;
+		
 		$this->hohma=$hohma;
 	}
 	public function makeNoise()
