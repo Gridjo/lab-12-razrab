@@ -31,6 +31,11 @@ class Animal
 	{
 		echo "Животное спит";
 	}
+	public function Constructt($food,$location)
+	{
+		$this->food=$food;
+		$this->location=$location;
+	}
 	
 }
 /**
@@ -40,9 +45,9 @@ class Dog extends Animal
 {
 	public $breed;
 	
-	function __construct($breed)
+	function __construct($food,$location,$breed)
 	{
-		
+		parent::Constructt($food,$location);
 		$this->breed=$breed;
 	}
 	public function makeNoise()
@@ -61,9 +66,9 @@ class Dog extends Animal
 class Cat extends Animal
 {
 	public $speed;
-	function __construct$speed)
+	function __construct($food,$location,$speed)
 	{
-		
+		parent::Constructt($food,$location);
 		$this->speed=$speed;
 	}
 	public function makeNoise()
@@ -87,9 +92,9 @@ class Cat extends Animal
 class Horse extends Animal
 {
 	public $hohma;
-	function __construct(,$hohma)
+	function __construct($hohma,$food,$location)
 	{
-		
+		parent::Constructt($food,$location);
 		$this->hohma=$hohma;
 	}
 	public function makeNoise()
@@ -98,7 +103,7 @@ class Horse extends Animal
 	}
 	public function eat()
 	{
-		echo "Лошать ест<br>";
+		echo "Лошать ест ".$this->food."<br>";
 
 	}
 }
