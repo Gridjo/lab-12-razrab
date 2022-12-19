@@ -102,7 +102,7 @@ class Horse extends Animal
 
 	}
 }
-$horse = new Horse("солома","Стойла","100db");
+$horse = new Horse("100db","солома","Стойла");
 $horse->makeNoise();
 $horse->eat();
 $horse->sleap();
